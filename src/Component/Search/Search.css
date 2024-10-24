@@ -1,0 +1,10 @@
+.Search-parent {
+   display: flex;
+   justify-content:center ;
+   margin-top: 2rem;
+}
+
+.form-control:hover, .form-control:active {
+    border-color: orange;
+}
+

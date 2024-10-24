@@ -1,0 +1,80 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.active{
+ border-bottom: #FFBE34 1px solid;
+}
+
+.parent {
+  width: 95%;
+}
+
+.navbar-title {
+  font-size: 2.5rem; 
+}
+
+
+.rotate {
+  display: inline-block; 
+  padding: 1px;
+  animation: rotate 2s linear infinite; 
+}
+.highlight {
+  color: #FFBE34; 
+  animation: sparkle 1.5s infinite alternate; 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    text-shadow: 0 0 5px #FFBE34, 0 0 10px #FFBE34, 0 0 15px #FFBE34; 
+  }
+  50% {
+    text-shadow: 0 0 20px #FFBE34, 0 0 35px #FFBE34, 0 0 40px #FFBE34; 
+  }
+}
+
+
+
+.nav-link {
+  color: #343a40; 
+  font-weight: 600; 
+  position: relative; 
+  transition: color 0.6s ease, transform 0.6s ease; 
+}
+
+.nav-link:hover {
+  color: #007bff; 
+  transform: scale(1.05); 
+}
+
+.nav-link::after {
+  content: ''; 
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFBE34;
+  position: absolute;
+  bottom: -5px; 
+  left: 50%; 
+  transition: width 0.3s ease; 
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+  left: 0; 
+}
+
+.custom-link {
+  padding: 0.75rem 1rem; 
+}
+

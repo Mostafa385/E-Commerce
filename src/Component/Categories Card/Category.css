@@ -1,0 +1,32 @@
+.btn-w {
+    width: 300px;
+}
+
+button{
+    border: none;
+}
+
+.Card {
+    transition: all 0.3s ease; 
+    transform: scale(1); 
+  }
+  
+  .Card:hover {
+    transform: scale(1.1); 
+    border-width: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+ 
+  .hover-primary:hover {
+    border: 2px solid #0d6efd; 
+  }
+  
+  .hover-warning:hover {
+    border: 2px solid #ffc107; 
+  }
+  
+  .hover-success:hover {
+    border: 2px solid #198754; 
+  }
+  
